@@ -1,0 +1,30 @@
+deliveryman:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:index" }
+
+deliveryman_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:show" }
+
+deliveryman_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:new" }
+
+deliveryman_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:create" }
+    methods:  POST
+
+deliveryman_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:edit" }
+
+deliveryman_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:update" }
+    methods:  [POST, PUT]
+
+deliveryman_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:DeliveryMan:delete" }
+    methods:  [POST, DELETE]

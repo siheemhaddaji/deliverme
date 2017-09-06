@@ -1,0 +1,30 @@
+dishes:
+    pattern:  /
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:index" }
+
+dishes_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:show" }
+
+dishes_new:
+    pattern:  /new
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:new" }
+
+dishes_create:
+    pattern:  /create
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:create" }
+    requirements: { _method: post }
+
+dishes_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:edit" }
+
+dishes_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:update" }
+    requirements: { _method: post|put }
+
+dishes_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:Dishes:delete" }
+    requirements: { _method: post|delete }

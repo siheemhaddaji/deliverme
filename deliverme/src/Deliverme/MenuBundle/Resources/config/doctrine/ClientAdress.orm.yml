@@ -1,0 +1,32 @@
+Deliverme\MenuBundle\Entity\ClientAdress:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\ClientAdressRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        adress:
+            type: string
+            length: 255
+            column: Adress
+        zipCode:
+            type: string
+            length: 255
+            column: ZipCode
+        title:
+            type: string
+            length: 255
+            column: Title
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

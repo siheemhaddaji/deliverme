@@ -1,0 +1,83 @@
+{% extends '::backend.html.twig' %}
+
+{% block contenu %}
+            
+            
+      <section class="wrapper">
+              <!-- page start-->
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Ajouter une plat
+                               <a class="btn btn-xs  btn-success pull-right" href="{{ path('dishes') }}"><i class="fa fa-backward"></i> Liste</a>
+
+                          </header> 
+                          <div class="panel-body">
+    <table >
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>{{ entity.firstName }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ entity.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Birthdate</th>
+                <td>{{ entity.birthDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Phonenumber</th>
+                <td>{{ entity.phoneNumber }}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ entity.photo }}</td>
+            </tr>
+            <tr>
+                <th>Typeofstay</th>
+                <td>{{ entity.typeOfStay }}</td>
+            </tr>
+            <tr>
+                <th>Permitsofstay</th>
+                <td>{{ entity.permitsOfStay }}</td>
+            </tr>
+            <tr>
+                <th>Driverslicensenumber</th>
+                <td>{{ entity.driversLicenseNumber }}</td>
+            </tr>
+            <tr>
+                <th>Copyofdrivinglicense</th>
+                <td>{{ entity.copyOfDrivingLicense }}</td>
+            </tr>
+            <tr>
+                <th>Data_created</th>
+                <td>{{ entity.datacreated|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Data_updated</th>
+                <td>{{ entity.dataupdated|date('Y-m-d H:i:s') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('deliveryman') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('deliveryman_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

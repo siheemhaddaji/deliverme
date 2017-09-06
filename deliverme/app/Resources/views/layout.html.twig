@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{% block title %}{% endblock %}</title>
+<meta name="description" content="The Spice Lounge" />
+<meta name="keywords" content="The Spice Lounge" />
+<meta name="author" content="The Spice Lounge" />
+
+<!-- Loading Google Web fonts-->
+
+
+{% include ':include:css.html.twig' %} 
+{% include ':include:js.html.twig' %} 
+
+
+	
+</head>
+<body>
+<!--PRELOADER-->
+	<section id="jSplash">
+		<div id="circle"></div>
+	</section>
+
+<!--Nice Scroll-->           <!--Used For Mobile Resolution-->
+<div id="menutop"></div>
+<!--Nice Scroll--> 
+
+
+<!--Wrapper 
+=============================-->
+<div id="wrapper">
+<div id="mask">
+
+<!--Header 
+=============================-->
+
+<div id="header" class="header">
+<div class="menu-inner">
+<div class="container">
+ 
+   <div class="row">
+				<div class="header-table col-md-12 header-menu">
+        			<!--  Logo section -->
+                	<div class="brand"><a href="winery.htm"  class="nav-link"><img src="{{ asset('bundles/delivermemenu/front/assets/img/winery-logo.png')}}"></a></div>
+                    <!--  // Logo section -->
+
+		<!-- Sub Page Menu section -->
+                                <nav class="main-nav">
+                                    <a href="#" class="nav-toggle"></a>
+                                        <ul id="sub-nav" class="nav">
+{% include ':include:menu.html.twig' %} 
+</ul>	
+				  </nav>
+                  <!--  // Sub Page Menu section -->
+				</div>
+</div>
+
+</div>   
+</div>
+</div>
+
+<!-- // Header 
+=============================-->
+
+
+
+<!--Menu with image small 
+=============================--> 
+		     
+<div id="menu3" class="item">
+			<!--<div class="menu-img-small img-overlay"></div>-->
+			<div class="content">
+                            {% block contenu %}
+            
+                                {% endblock %}
+	  </div>
+    </div>
+	
+<!-- // Menu with image small 
+=============================--> 
+<!--About us
+=============================-->    
+   
+
+<!-- Footer
+=============================-->
+<div id="footer" class="footer">
+	<div class="copyright">Copyrights &copy; The Spice Lounge 2015.</div>
+</div>
+<!-- // Footer Ends
+=============================-->
+
+
+
+</div>
+</div>
+<!-- // Wrapper =============================-->
+
+
+{% include ':include:jsFooter.html.twig' %} 
+
+
+
+
+
+
+</body>
+
+</html>

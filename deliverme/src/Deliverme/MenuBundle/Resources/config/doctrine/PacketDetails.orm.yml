@@ -1,0 +1,32 @@
+Deliverme\MenuBundle\Entity\PacketDetails:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\PacketDetailsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        price:
+            type: float
+            column: Price
+        amount:
+            type: integer
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+    manyToOne:         
+     packet:
+           targetEntity: Packet
+           inversedBy: PacketDetails
+           joinColumn:
+            name: Packet_id
+            referencedColumnName: id        
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

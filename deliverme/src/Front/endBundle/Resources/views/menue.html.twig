@@ -1,0 +1,37 @@
+{% extends '::layout.html.twig' %} 
+
+{% block title %}Menue{% endblock %}
+                            {% block contenu %}
+				<div class="content_overlay"></div>
+				<div class="content_inner">
+					<div class="row contentscroll">
+	<div class="container col-md-12">
+         <!-- <div class="col-md-6 empty">&nbsp;</div>-->
+                          <div class="col-md-12 content_text">
+                          <h1>Menu with images (Small) <a href="sample.pdf" class="link"> <img src="{{ asset('bundles/delivermemenu/front/assets/img/pdf-icon.png')}}" title="PDF Menu to Print" alt="PDF Menu to Print"></a></h1><p class="pad_top13">Menu's and few food photos can be added on the left column, offering American cuisine and warm hospitality in a rustic historically preserved building.</p> <br />
+                          <div class="pad_top30 home3">
+           <div class="col-md-12">
+               {% for dishe in dishes%}
+            <div class="row">
+            <div class="menu_content clearfix">
+				<div class="col-md-2   col-xs-2 menu_small">
+                                    <div class="row">
+                                        <img src="{{asset(dishe.WebPath)}}"  class="img-responsive img_border" alt="" />
+                                    </div>
+                                </div>
+				<div class="col-md-10  col-xs-10  text-left">
+				<div class="title-splider">
+					<h4 class="clearfix"><span class="left border_bottom">{{dishe.name}}</span><span class="right">{{dishe.price}} CHF</span></h4>
+				</div>
+                	<p>{{dishe.ingredients|raw}} </p>
+				</div>
+            </div>
+			</div>
+               {% endfor %}
+            </div>
+            </div>
+            </div>
+           </div>
+    </div>
+                </div>
+                                {% endblock %}

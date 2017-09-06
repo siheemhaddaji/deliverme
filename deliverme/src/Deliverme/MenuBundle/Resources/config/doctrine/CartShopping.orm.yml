@@ -1,0 +1,55 @@
+Deliverme\MenuBundle\Entity\CartShopping:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\CartShoppingRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        reference:
+            type: string
+            length: 255
+            column: Reference
+        totalPrice:
+            type: float
+            column: TotalPrice
+        deliveryPrice:
+            type: float
+            column: DeliveryPrice
+        status:
+            type: string
+            length: 255
+            column: Status
+        data_created:
+            type:datetime
+        data_updated:
+            type:datetime
+    manyToOne:  
+     client:
+           targetEntity: Client
+           inversedBy: CartShopping
+           joinColumn:
+            name: Client_id
+            referencedColumnName: id 
+            
+     clientAdress:
+           targetEntity: ClientAdress
+           inversedBy: CartShopping
+           joinColumn:
+            name: ClientAdress_id
+            referencedColumnName: id
+            
+     deliveryMan:
+           targetEntity: DeliveryMan
+           inversedBy: CartShopping
+           joinColumn:
+            name: DeliveryMan_id
+            referencedColumnName: id            
+          
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

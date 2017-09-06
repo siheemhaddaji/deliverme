@@ -1,0 +1,71 @@
+{% extends '::backend.html.twig' %} 
+
+
+	{% block contenu %}
+      
+
+            
+      <section class="wrapper">
+              <!-- page start-->
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                             Menu
+                              
+                                <a class="btn btn-xs  btn-success pull-right" href="{{ path('deliveryman_new') }}"><i class="fa fa-plus" ></i> Ajouter</a>
+
+                          </header>
+                          <div class="panel-body">
+       <table class="display table table-bordered table-striped" id="example">
+        <thead>
+            <tr>
+                 <td> <img src="{{ asset(entity.webPath) }}"  width="100px" alt="img04"></td>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Birthdate</th>
+                <th>Phonenumber</th>
+                <th>Typeofstay</th>
+                <th>Permitsofstay</th>
+                <th>Driverslicensenumber</th>
+                <th>Copyofdrivinglicense</th>
+                <th>Data_created</th>
+                <th>Data_updated</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                
+              <td><a href="{{ path('deliveryman_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+              <td> <img src="{{ asset(entity.webPath) }}"  width="100px" alt="img04"></td>
+                <td>{{ entity.firstName }}</td>
+                <td>{{ entity.lastName }}</td>
+                <td>{% if entity.birthDate %}{{ entity.birthDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.phoneNumber }}</td>
+                <td>{{ entity.photo }}</td>
+                <td>{{ entity.typeOfStay }}</td>
+                <td>{{ entity.permitsOfStay }}</td>
+                <td>{{ entity.driversLicenseNumber }}</td>
+                <td>{{ entity.copyOfDrivingLicense }}</td>
+                <td>{% if entity.datacreated %}{{ entity.datacreated|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.dataupdated %}{{ entity.dataupdated|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('deliveryman_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('deliveryman_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+         
+        {% endfor %}
+        </tbody>
+    </table>
+          </div>
+
+    {% endblock %}

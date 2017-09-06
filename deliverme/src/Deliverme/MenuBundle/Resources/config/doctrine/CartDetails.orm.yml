@@ -1,0 +1,54 @@
+Deliverme\MenuBundle\Entity\CartDetails:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\CartDetailsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tva:
+            type: float
+            column: Tva
+        price:
+            type: float
+            column: Price
+        amount:
+            type: integer
+            column: Amount
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+        
+    manyToOne:  
+     dishes:
+           targetEntity: Dishes
+           inversedBy: CartDetails
+           joinColumn:
+            name: Dishes_id
+            referencedColumnName: id 
+      
+           
+     cartShopping:
+           targetEntity: CartShopping
+           inversedBy: CartDetails
+           joinColumn:
+            name: CartShopping_id
+            referencedColumnName: id       
+      
+            
+     packet:
+           targetEntity: Packet
+           inversedBy: CartDetails
+           joinColumn:
+            name: Packet_id
+            referencedColumnName: id          
+        
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

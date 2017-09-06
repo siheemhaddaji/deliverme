@@ -1,0 +1,30 @@
+areas:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:Areas:index" }
+
+areas_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:Areas:show" }
+
+areas_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:Areas:new" }
+
+areas_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:Areas:create" }
+    methods:  POST
+
+areas_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:Areas:edit" }
+
+areas_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:Areas:update" }
+    methods:  [POST, PUT]
+
+areas_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:Areas:delete" }
+    methods:  [POST, DELETE]

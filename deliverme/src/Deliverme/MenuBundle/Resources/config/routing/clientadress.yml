@@ -1,0 +1,30 @@
+clientadress:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:index" }
+
+clientadress_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:show" }
+
+clientadress_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:new" }
+
+clientadress_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:create" }
+    methods:  POST
+
+clientadress_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:edit" }
+
+clientadress_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:update" }
+    methods:  [POST, PUT]
+
+clientadress_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:ClientAdress:delete" }
+    methods:  [POST, DELETE]

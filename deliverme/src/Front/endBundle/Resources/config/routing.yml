@@ -1,0 +1,16 @@
+frontend_homepage:
+    path:     /
+    defaults: { _controller: FrontendBundle:front:index }
+frontend_menue:
+    path:     /menue
+    defaults: { _controller: FrontendBundle:front:menue }
+frontend_about:
+    path:     /about
+    defaults: { _controller: FrontendBundle:front:about }
+
+frontend_contact:
+    path:     /contact
+    defaults: { _controller: FrontendBundle:front:contact }
+frontend_contactus:
+    path:     /contactus
+    defaults: { _controller: FrontendBundle:front:contactus }

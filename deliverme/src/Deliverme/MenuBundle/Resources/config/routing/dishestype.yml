@@ -1,0 +1,30 @@
+dishestype:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:index" }
+
+dishestype_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:show" }
+
+dishestype_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:new" }
+
+dishestype_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:create" }
+    methods:  POST
+
+dishestype_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:edit" }
+
+dishestype_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:update" }
+    methods:  [POST, PUT]
+
+dishestype_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:DishesType:delete" }
+    methods:  [POST, DELETE]

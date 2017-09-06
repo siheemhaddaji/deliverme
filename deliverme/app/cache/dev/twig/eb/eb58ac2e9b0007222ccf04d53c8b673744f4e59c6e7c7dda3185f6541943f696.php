@@ -1,0 +1,78 @@
+<?php
+
+/* :include:menu.html.twig */
+class __TwigTemplate_07f65a53000de284fc3c0d487eb9dff9ae01fb1abf18e706cf50a5a89d353801 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $__internal_0a5d2d90421b4087a85344ece3c451da506bf60063ae37501131cba14d2d5bde = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0a5d2d90421b4087a85344ece3c451da506bf60063ae37501131cba14d2d5bde->enter($__internal_0a5d2d90421b4087a85344ece3c451da506bf60063ae37501131cba14d2d5bde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":include:menu.html.twig"));
+
+        // line 2
+        echo "
+                                             <li><a href=\"";
+        // line 3
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("frontend_homepage");
+        echo "\" class=\"nav-link\">Home</a></li>
+                                             <li><a href=\"";
+        // line 4
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("frontend_menue");
+        echo "\" class=\"nav-link\">Menue</a></li>
+                                             <li><a href=\"";
+        // line 5
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("frontend_about");
+        echo "\" class=\"nav-link\">About</a></li>
+                                             <li><a href=\"";
+        // line 6
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("frontend_contact");
+        echo "\" class=\"nav-link\">Contact</a></li>
+                                        ";
+        
+        $__internal_0a5d2d90421b4087a85344ece3c451da506bf60063ae37501131cba14d2d5bde->leave($__internal_0a5d2d90421b4087a85344ece3c451da506bf60063ae37501131cba14d2d5bde_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return ":include:menu.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  37 => 6,  33 => 5,  29 => 4,  25 => 3,  22 => 2,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("{# empty Twig template #}
+
+                                             <li><a href=\"{{path('frontend_homepage')}}\" class=\"nav-link\">Home</a></li>
+                                             <li><a href=\"{{path('frontend_menue')}}\" class=\"nav-link\">Menue</a></li>
+                                             <li><a href=\"{{path('frontend_about')}}\" class=\"nav-link\">About</a></li>
+                                             <li><a href=\"{{path('frontend_contact')}}\" class=\"nav-link\">Contact</a></li>
+                                        ", ":include:menu.html.twig", "C:\\xampp\\htdocs\\deliverme\\app/Resources\\views/include/menu.html.twig");
+    }
+}

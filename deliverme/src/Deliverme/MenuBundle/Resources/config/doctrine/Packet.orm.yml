@@ -1,0 +1,29 @@
+Deliverme\MenuBundle\Entity\Packet:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\PacketRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        price:
+            type: float
+            column: Price
+        startDate:
+            type: datetime
+            column: StartDate
+        endDate:
+            type: datetime
+            column: EndDate
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

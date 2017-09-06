@@ -1,0 +1,5 @@
+## YAML Template.
+---
+contact:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:Contact:index" }

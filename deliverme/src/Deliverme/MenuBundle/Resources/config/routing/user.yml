@@ -1,0 +1,30 @@
+user:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:User:index" }
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:User:show" }
+
+user_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:User:new" }
+
+user_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:User:create" }
+    methods:  POST
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:User:edit" }
+
+user_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:User:update" }
+    methods:  [POST, PUT]
+
+user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:User:delete" }
+    methods:  [POST, DELETE]

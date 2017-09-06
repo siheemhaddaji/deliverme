@@ -1,0 +1,30 @@
+packetdetails:
+    path:     /
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:index" }
+
+packetdetails_show:
+    path:     /{id}/show
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:show" }
+
+packetdetails_new:
+    path:     /new
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:new" }
+
+packetdetails_create:
+    path:     /create
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:create" }
+    methods:  POST
+
+packetdetails_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:edit" }
+
+packetdetails_update:
+    path:     /{id}/update
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:update" }
+    methods:  [POST, PUT]
+
+packetdetails_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DelivermeMenuBundle:PacketDetails:delete" }
+    methods:  [POST, DELETE]

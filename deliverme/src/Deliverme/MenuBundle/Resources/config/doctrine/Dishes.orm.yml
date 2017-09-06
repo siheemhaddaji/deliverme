@@ -1,0 +1,53 @@
+Deliverme\MenuBundle\Entity\Dishes:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\DishesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            column: Name
+        ingredients:
+            type: text
+            column: Ingredients
+        price:
+            type: float
+            column: Price
+        photo:
+            type: string
+            length: 255       
+        status:
+            type: string
+            length: 255
+            column: Status
+        ranking:
+            type: string
+            length: 255
+            column: Ranking
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+    manyToOne:         
+     dishesType:
+           targetEntity: DishesType
+           inversedBy: Dishes
+           joinColumn:
+            name: DishesType_id
+            referencedColumnName: id
+                    
+            
+    lifecycleCallbacks: 
+        preUpdate : [updateDate , preUpload] 
+        prePersist : [createDate , preUpload]
+        postPersist: [ upload  ]
+        postUpdate: [ upload  ]
+        postRemove: [ removeUpload  ]
+ 
+    

@@ -1,0 +1,31 @@
+Front\endBundle\Entity\Contact:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fullName:
+            type: string
+            length: 255
+            column: FullName
+        phoneNumber:
+            type: string
+            length: 255
+            column: PhoneNumber
+        mail:
+            type: string
+            length: 255
+            column: Mail
+        subject:
+            type: string
+            length: 255
+            column: subject
+        message:
+            type: string
+            length: 255
+            column: Message
+    lifecycleCallbacks: {  }

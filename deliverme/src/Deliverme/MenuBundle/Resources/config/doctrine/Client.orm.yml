@@ -1,0 +1,35 @@
+Deliverme\MenuBundle\Entity\Client:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\ClientRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: 255
+            column: FirstName
+        lastName:
+            type: string
+            length: 255
+            column: LastName
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+    manyToOne:         
+     user:
+           targetEntity: User
+           inversedBy: Client
+           joinColumn:
+            name: user_id
+            referencedColumnName: id
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

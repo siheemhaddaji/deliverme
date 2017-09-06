@@ -1,0 +1,26 @@
+Deliverme\MenuBundle\Entity\Areas:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\AreasRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        zipCode:
+            type: integer
+            column: ZipCode
+        minimunPrice:
+            type: float
+            column: MinimunPrice
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                    
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

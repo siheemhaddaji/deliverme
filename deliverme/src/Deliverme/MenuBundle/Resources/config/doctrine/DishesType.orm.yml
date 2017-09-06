@@ -1,0 +1,35 @@
+Deliverme\MenuBundle\Entity\DishesType:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\DishesTypeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            column: Name
+        
+        status:
+            type: string
+            length: 255
+            column: Status
+        ranking:
+            type: string
+            length: 255
+            column: Ranking
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+            
+        
+   
+    lifecycleCallbacks: 
+        preUpdate : [updateDate] 
+        prePersist : [createDate]
+ 

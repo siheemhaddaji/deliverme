@@ -1,0 +1,76 @@
+{# empty Twig template #}
+
+{% extends '::layout.html.twig' %} 
+
+{% block title %}contact{% endblock %}
+    {% block contenu%}
+
+
+<div >
+			<div class="contactform img-overlay"></div>
+			<div class="content">
+            
+				<div class="content_overlay"></div>
+				<div class="content_inner" >
+                <div class="row contentscroll">
+	<div class="container col-md-12">
+          <div class="col-md-6 empty">&nbsp;</div>
+		  			
+                          <div class="col-md-6 content_text">
+                          <div id="contactforms">
+                           <h1>Contact Form</h1>
+                           <form id="contact_form" class="cont_form pad_top13" action="#" method="post">
+			<p>You can make a reservation by filling out the form below, Please note that reservations are only confirmed once we check availability.</p>
+			    	
+			                                
+
+			<div class="clearfix cont_form pad_top20"> 
+                                                                {{ form_widget(form.subject, {'attr': {
+                                                                    'class': "textbox1" ,
+                                                                     'placeholder' : "* subject : " , 
+                                                                        'onfocus' : "this.placeholder = ''" ,                          
+                                                                          'onBlur' : "this.placeholder = '* Subject :'" ,                          
+                                                                 }}) }}
+                            
+                                                                {{ form_widget(form.fullName, {'attr': {
+                                                                    'class': "textbox1" ,
+                                                                     'placeholder' : "* Name : " , 
+                                                                        'onfocus' : "this.placeholder = ''" ,                          
+                                                                          'onBlur' : "this.placeholder = '* Name :'" ,                          
+                                                                 }}) }}
+                                                                {{ form_widget(form.PhoneNumber, {'attr': {
+                                                                    'class': "textbox1" ,
+                                                                     'placeholder' : "* Phone Number : " , 
+                                                                        'onfocus' : "this.placeholder = ''" ,                          
+                                                                          'onBlur' : "this.placeholder = '* Phone Number :'" ,                          
+                                                                }}) }}
+
+                                                                {{ form_widget(form.Mail, {'attr': {
+                                                                    'class': "textbox1" ,
+                                                                     'placeholder' : "* Mail : " , 
+                                                                        'onfocus' : "this.placeholder = ''" ,                          
+                                                                          'onBlur' : "this.placeholder = '* Mail :'" ,                          
+                                                                  }}) }}
+
+                                                                {{ form_widget(form.Message, {'attr': {
+                                                                    'class': "textbox1" ,
+                                                                     'placeholder' : "* Message : " , 
+                                                                        'onfocus' : "this.placeholder = ''" ,                          
+                                                                          'onBlur' : "this.placeholder = '* Message :'" ,                          
+                                                                }}) }}
+
+                                                                
+                                                                {{ form_rest(form) }}
+
+			
+                </div>
+				</form>
+	</div>
+                          </div>
+    </div>
+                </div>
+				</div>
+		  </div>
+	</div>
+        
+                {%endblock%}

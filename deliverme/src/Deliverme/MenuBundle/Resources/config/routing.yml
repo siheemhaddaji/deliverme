@@ -1,0 +1,39 @@
+deliverme_menu_user:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+deliverme_menu_packetdetails:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/packetdetails.yml"
+    prefix:   /packetdetails
+
+deliverme_menu_packet:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/packet.yml"
+    prefix:   /packet
+
+deliverme_menu_deliveryman:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/deliveryman.yml"
+    prefix:   /deliveryman
+
+deliverme_menu_clientadress:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/clientadress.yml"
+    prefix:   /clientadress
+
+deliverme_menu_client:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+
+deliverme_menu_dishestype:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/dishestype.yml"
+    prefix:   /dishestype
+
+deliverme_menu_areas:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/areas.yml"
+    prefix:   /areas
+
+
+DelivermeMenuBundle_dishes:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/dishes.yml"
+    prefix:   /dishes
+DelivermeMenuBundle_contact:
+    resource: "@DelivermeMenuBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact

@@ -1,0 +1,59 @@
+Deliverme\MenuBundle\Entity\DeliveryMan:
+    type: entity
+    table: null
+    repositoryClass: Deliverme\MenuBundle\Entity\DeliveryManRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: 255
+            column: FirstName
+        lastName:
+            type: string
+            length: 255
+            column: LastName
+        birthDate:
+            type: datetime
+            column: BirthDate
+        phoneNumber:
+            type: string
+            length: 255
+            column: PhoneNumber
+        photo:
+            type: string
+            length: 255
+            column: Photo
+        typeOfStay:
+            type: string
+            length: 255
+            column: TypeOfStay
+        
+        permitsOfStay:
+            type: string
+            length: 255
+            column: PermitsOfStay
+        driversLicenseNumber:
+            type: string
+            length: 255
+            column: DriversLicenseNumber
+        copyOfDrivingLicense:
+            type: string
+            length: 255
+            column: CopyOfDrivingLicense
+        data_created:
+            type: datetime
+        data_updated:
+            type: datetime
+                
+lifecycleCallbacks: 
+        preUpdate : [updateDate , preUpload] 
+        prePersist : [createDate , preUpload]
+        postPersist: [ upload  ]
+        postUpdate: [ upload  ]
+        postRemove: [ removeUpload  ]
+ 

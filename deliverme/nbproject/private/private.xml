@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Entity/Contact.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Controller/ClientAdressController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/app/Resources/views/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Resources/config/doctrine/Contact.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Resources/views/Dishes/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/app/Resources/views/backend.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/app/Resources/views/layout.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Resources/views/Contact/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Entity/DishesTypeRepository.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Controller/ClientController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Resources/config/routing/clientadress.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Resources/views/contactus.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Controller/frontController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/app/Resources/views/include/menu.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Controller/DishesController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Resources/views/contact.html.twig</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Front/endBundle/Form/ContactUsType.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Resources/config/routing/contact.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/app/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Controller/ContactController.php</file>
+            <file>file:/C:/xampp/htdocs/deliverme/src/Deliverme/MenuBundle/Controller/DishesTypeController.php</file>
+        </group>
+    </open-files>
+</project-private>
